@@ -27,16 +27,16 @@ const newsletter = {
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  {
+ // {
   //   name: "GitHub",
   //   icon: "github",
-  //   link: "https://github.com/once-ui-system/nextjs-starter",
-  // },
-  // {
-  //   name: "LinkedIn",
-  //   icon: "linkedin",
-  //   link: "https://www.linkedin.com/company/once-ui/",
-  // },
+    // link: "https://github.com/once-ui-system/nextjs-starter",
+   //},
+   {
+     name: "LinkedIn",
+     icon: "linkedin",
+     link: "https://www.linkedin.com/company/european-youth-parliament-turkiye/",
+   },
   // {
   //   name: "Threads",
   //   icon: "threads",
@@ -46,7 +46,7 @@ const social = [
   //   name: "Email",
   //   icon: "email",
   //   link: `mailto:${person.email}`,
-  },
+  //},
 ];
 
 const home = {
