@@ -1,4 +1,7 @@
 import { Logo } from "@once-ui-system/core";
+import "@fontsource/poppins"; // Defaults to weight 400
+import "@fontsource/poppins/700.css"; // Specify weight
+
 
 const person = {
   firstName: "EYP",
@@ -37,11 +40,11 @@ const social = [
      icon: "linkedin",
      link: "https://www.linkedin.com/company/european-youth-parliament-turkiye/",
    },
-  // {
-  //   name: "Threads",
-  //   icon: "threads",
-  //   link: "https://www.threads.com/@once_ui",
-  // },
+   {
+     name: "Instagram",
+     icon: "instagram",
+     link: "https://www.instagram.com/eypturkiye/",
+   },
   // {
   //   name: "Email",
   //   icon: "email",
@@ -53,9 +56,9 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <> <span style={{ fontSize: "2rem", fontWeight: "bold", letterSpacing: "0.1rem", fontFamily: "Times New Roman, serif" }}> EYP Türkiye Official Webpage</span> <br/><br/> Bridge Between Youth and the World</>,
+  title: `EYP Türkiye Official Webpage`,
+  description: `European Youth Parliament of Türkiye Official Webpage`,
+  headline: <> <span style={{ fontSize: "2rem", fontWeight: "800", letterSpacing: "0.05rem", fontFamily: "Poppins, sans-serif" }}> EYP Türkiye Official Webpage</span> <br/><br/> Bridge Between Youth and the World</>,
   featured: {
     display: false,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
