@@ -1,7 +1,11 @@
 import { Logo } from "@once-ui-system/core";
-import "@fontsource/poppins"; // Defaults to weight 400
-import "@fontsource/poppins/700.css"; // Specify weight
+import { Poppins } from 'next/font/google';
 
+const poppins = Poppins({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+});
 
 const person = {
   firstName: "EYP",
@@ -58,7 +62,7 @@ const home = {
   label: "Home",
   title: `EYP Türkiye Official Webpage`,
   description: `European Youth Parliament of Türkiye Official Webpage`,
-  headline: <> <span style={{ fontSize: "2rem", fontWeight: "800", letterSpacing: "0.05rem", fontFamily: "Poppins, sans-serif" }}> EYP Türkiye Official Webpage</span> <br/><br/> Bridge Between Youth and the World</>,
+  headline: <> <span className={poppins.className} style={{ fontSize: "2rem", fontWeight: "800", letterSpacing: "0.05rem" }}> EYP Türkiye Official Webpage</span> <br/><br/> Bridge Between Youth and the World</>,
   featured: {
     display: false,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
