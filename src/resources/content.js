@@ -104,7 +104,7 @@ const about = {
       {
         company: "Current",
         timeframe: "2025 - Present",
-        // role: "Senior Design Engineer",
+        role: "",
         achievements: [
           <>
             Bilge Çilingir - President
