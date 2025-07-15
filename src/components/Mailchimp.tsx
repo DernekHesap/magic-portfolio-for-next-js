@@ -20,38 +20,38 @@ type NewsletterProps = {
 };
 
 export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
-  const [email, setEmail] = useState<string>("");
-  const [error, setError] = useState<string>("");
-  const [touched, setTouched] = useState<boolean>(false);
+  // Input and button-related state
+  // const [email, setEmail] = useState<string>("");
+  // const [error, setError] = useState<string>("");
+  // const [touched, setTouched] = useState<boolean>(false);
 
-  const validateEmail = (email: string): boolean => {
-    if (email === "") {
-      return true;
-    }
+  // Email validation and event handlers
+  // const validateEmail = (email: string): boolean => {
+  //   if (email === "") {
+  //     return true;
+  //   }
+  //   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   return emailPattern.test(email);
+  // };
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = e.target.value;
+  //   setEmail(value);
+  //   if (!validateEmail(value)) {
+  //     setError("Please enter a valid email address.");
+  //   } else {
+  //     setError("");
+  //   }
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setEmail(value);
+  // const debouncedHandleChange = debounce(handleChange, 2000);
 
-    if (!validateEmail(value)) {
-      setError("Please enter a valid email address.");
-    } else {
-      setError("");
-    }
-  };
-
-  const debouncedHandleChange = debounce(handleChange, 2000);
-
-  const handleBlur = () => {
-    setTouched(true);
-    if (!validateEmail(email)) {
-      setError("Please enter a valid email address.");
-    }
-  };
+  // const handleBlur = () => {
+  //   setTouched(true);
+  //   if (!validateEmail(email)) {
+  //     setError("Please enter a valid email address.");
+  //   }
+  // };
 
   return (
     <Column
@@ -121,6 +121,8 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
       >
         {newsletter.description}
       </Text>
+
+      {/* 
       <form
         style={{
           width: "100%",
@@ -176,12 +178,15 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
           <div className="clear">
             <Flex height="48" vertical="center">
               <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
-                Subscribe
+                Join Us 
               </Button>
             </Flex>
           </div>
         </Flex>
       </form>
+      */}
+
     </Column>
   );
 };
+

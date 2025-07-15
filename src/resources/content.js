@@ -1,25 +1,25 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "EYP",
+  lastName: "Türkiye",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "National Committee",
   avatar: "/images/avatar.jpg",
   email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Europe/Istanbul", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Start your {person.firstName} Journey</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      If you are a highschool or university student who is interested in world-wide problems and would like to learn more about EYP reach out to us: <br /><br />
+      <strong>info@eyp.org.tr</strong>
     </>
   ),
 };
@@ -28,24 +28,24 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/once-ui-system/nextjs-starter",
+  // },
+  // {
+  //   name: "LinkedIn",
+  //   icon: "linkedin",
+  //   link: "https://www.linkedin.com/company/once-ui/",
+  // },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  // },
+  // {
+  //   name: "Email",
+  //   icon: "email",
+  //   link: `mailto:${person.email}`,
   },
 ];
 
@@ -55,16 +55,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <> <span style={{ fontSize: "2rem", fontWeight: "bold", letterSpacing: "0.1rem", fontFamily: "Times New Roman, serif" }}> EYP Türkiye Official Webpage</span> <br/><br/> Bridge Between Youth and the World</>,
   featured: {
-    display: true,
+    display: false,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/blog",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      European Youth Parliament (EYP) is a place, where people from all around the Europe
+      gets together to find solutions to world problems.
     </>
   ),
 };
@@ -79,7 +79,7 @@ const about = {
     subItems: false,
   },
   avatar: {
-    display: true,
+    display: false,
   },
   calendar: {
     display: true,
@@ -90,60 +90,74 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        EYP Türkiye is a non-partisan, non-govermental organisation that is represented by Avrupa Gençlik Parlamentosu Derneği.
+        We bring young people of Türkiye together under one roof to be able to discuss current issues such as women rights, global refugee problems,
+        environmental crisis, protection of art and culture and many more. Our mision is to be able to reach all around Türkiye to give
+        young people an opportunity of becoming a world citizen.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Board Of EYP Türkiye",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Current",
+        timeframe: "2025 - Present",
+        // role: "Senior Design Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Bilge Çilingir - President
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Deniz Duru Eratak - Vice President
+          </>,
+          <>
+            Batur Alp Akyüz - Secretary General
+          </>,
+           <>
+            Hasan Kadri Özalp - Session & Event Director
+          </>,
+           <>
+            Fırat Tanrıverdi - Human Resoruces Department
+          </>,
+            <>
+            İnanç Turhan Kranda - Finance Director
+          </>,
+            <>
+            İdil Aydın - Public Relations Director*
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/board.jpg",
+          //   alt: "Once UI Project",
+          //   width: 42,
+          //   height: 24,
+          // },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      // {
+      //   company: "Creativ3",
+      //   timeframe: "2018 - 2022",
+      //   role: "Lead Designer",
+      //   achievements: [
+      //     <>
+      //       Developed a design system that unified the brand across multiple platforms, improving
+      //       design consistency by 40%.
+      //     </>,
+      //     <>
+      //       Led a cross-functional team to launch a new product line, contributing to a 15% increase
+      //       in overall company revenue.
+      //     </>,
+      //   ],
+      //   images: [],
+      // },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -157,7 +171,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -198,8 +212,8 @@ const about = {
 
 const blog = {
   path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
+  label: "Sessions",
+  title: "What Have We Done So Far",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -207,7 +221,7 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
+  label: "What We Do",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts

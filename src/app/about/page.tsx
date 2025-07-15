@@ -113,7 +113,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
+            {/* {about.calendar.display && (
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -137,7 +137,7 @@ export default function About() {
                   icon="chevronRight"
                 />
               </Flex>
-            )}
+            )} */}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
