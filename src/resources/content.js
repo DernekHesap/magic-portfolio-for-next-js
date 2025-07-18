@@ -106,7 +106,7 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Board Of EYP Türkiye",
+    title: "Board of EYP Türkiye",
     experiences: [
       {
         company: "Current",
