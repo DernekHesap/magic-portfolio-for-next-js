@@ -129,9 +129,6 @@ const about = {
             Fırat Tanrıverdi - Human Resoruces Department
           </>,
             <>
-            İnanç Turhan Kranda - Finance Director
-          </>,
-            <>
             İdil Aydın - Public Relations Director*
           </>,
         ],
