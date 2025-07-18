@@ -123,7 +123,7 @@ const about = {
             Batur Alp Akyüz - Secretary General
           </>,
            <>
-            Hasan Kadri Özalp - Session & Event Director
+            Hasan Kadri Özalp - Sessions & Events Director
           </>,
            <>
             Fırat Tanrıverdi - Human Resoruces Department
